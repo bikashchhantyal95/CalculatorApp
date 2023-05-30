@@ -2,23 +2,45 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
 
 	public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	public void performCalculations(object sender, EventArgs e)
 	{
-		count++;
+		double result = 0;
+		string selectedOperation = operationsList.SelectedItem?.ToString();
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		if(double.TryParse(operhand_one.Text, out double first_num) && double.TryParse(operhand_two.Text, out double second_num))
+			{
+			if(selectedOperation == "Add")
+			{
+				result = first_num + second_num;
+				result_output.Text = result.ToString();
+			}
+            if (selectedOperation == "Subtract")
+            {
+                result = first_num - second_num;
+                result_output.Text = result.ToString();
+            }
+            if (selectedOperation == "Multiply")
+            {
+                result = first_num * second_num;
+                result_output.Text = result.ToString();
+            }
+            if (selectedOperation == "Divide")
+            {
+                if(second_num == 0)
+				{
+					result_output.Text = "Error: Number cannot be divisible by 0.";
+					return;
+				}
+				result = first_num / second_num;
+				result_output.Text = result.ToString();
+            }
+        }
 	}
 }
 
