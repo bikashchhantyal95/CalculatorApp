@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{BF4718C2-2048-4DBC-BA79-CF81E4439F39}|Default">
-  <MonoDevelop.Ide.ItemProperties.CalculatorApp PreferredExecutionTarget="MyAppleMacCatalystID" FirstBuild="True" />
+﻿<Properties StartupConfiguration="{BF4718C2-2048-4DBC-BA79-CF81E4439F39}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.ItemProperties.CalculatorApp PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
 </Properties>
