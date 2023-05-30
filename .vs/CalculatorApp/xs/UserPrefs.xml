@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{BF4718C2-2048-4DBC-BA79-CF81E4439F39}|Default" GitUserInfo="UsingGIT">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.CalculatorApp PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalculatorApp/MainPage.xaml.cs">
+    <Files>
+      <File FileName="CalculatorApp/MainPage.xaml.cs" Line="59" Column="6" />
+      <File FileName="CalculatorApp/MainPage.xaml" Line="60" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CalculatorApp" expanded="True">
+            <Node name="CalculatorApp" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

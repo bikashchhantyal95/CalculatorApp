@@ -47,12 +47,17 @@ public partial class MainPage : ContentPage
             // perform addition
             if (selectedOperation == "Divide")
             {
+                //check if the second num is zero
                 if (second_num == 0)
                 {
+                    // Display error if second number is zero.
                     result_output.Text = "Error: Number cannot be divisible by 0.";
                     return;
                 }
+                // store the division result
                 result = first_num / second_num;
+
+                // parse the result to string to display on the screen
                 result_output.Text = result.ToString();
             }
         }
